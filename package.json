@@ -3,12 +3,16 @@
   "version": "0.0.0",
   "main": "dist/vue-quick-preview.umd.js",
   "module": "dist/vue-quick-preview.es.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/vue-quick-preview.umd.js",
       "import": "./dist/vue-quick-preview.es.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build && tsc --emitDeclarationOnly",
@@ -17,6 +21,21 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
+  "homepage": "https://github.com/varHarrie/vue-quick-preview#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varHarrie/vue-quick-preview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/varHarrie/vue-quick-preview/issues"
+  },
+  "keywords": [
+    "vue",
+    "lightbox",
+    "component"
+  ],
+  "author": "varHarrie<varharrie@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "vue": "^3.0.11"
   },
