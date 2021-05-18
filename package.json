@@ -1,0 +1,40 @@
+{
+  "name": "vue-quick-preview",
+  "version": "0.0.0",
+  "main": "dist/vue-quick-preview.umd.js",
+  "module": "dist/vue-quick-preview.es.js",
+  "exports": {
+    ".": {
+      "require": "./dist/vue-quick-preview.umd.js",
+      "import": "./dist/vue-quick-preview.es.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build && tsc --emitDeclarationOnly",
+    "serve": "vite preview",
+    "docs:dev": "npm run build && vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "dependencies": {
+    "vue": "^3.0.11"
+  },
+  "devDependencies": {
+    "@types/estree": "^0.0.47",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.11",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "less": "^4.1.1",
+    "prettier": "^2.3.0",
+    "typescript": "^4.2.4",
+    "vite": "^2.3.3",
+    "vitepress": "^0.13.2",
+    "vue-tsc": "^0.1.4"
+  }
+}
